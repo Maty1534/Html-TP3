@@ -1,0 +1,109 @@
+* {
+    background-color: #253342 ;
+    color: #5e9188;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+}
+
+.header__item {
+    
+    background-color: #232226;
+    color: #FFD700;
+    
+}
+
+header ul a {
+    text-decoration: none;
+    width: 175px;
+    text-align: center;
+    list-style: none;
+    margin: 1% 5%;
+    border: #232226 solid 0.25vw;
+    background-color: #232226;
+    border-radius: 10px;
+}
+
+.header__item:hover{
+    color: rgb(149, 224, 36);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    background-color: #FFFFFF;
+    overflow: auto;
+}
+
+.titulo {
+    margin-top: 1%;
+    order: 0; /* Coloca el elemento .titulo en la parte superior */
+    flex: 0 0 100%; /* Evita que se estire horizontalmente y ocupe todo el ancho disponible */
+    padding: 1% 5%;
+    text-align: center;
+    box-shadow: #232226;
+}
+
+section, aside, #Inicio{
+    width: 46%;
+    min-width: 350px;
+    margin: 2%;
+    flex: 1;
+    padding: 0.5%;
+    box-shadow: #232226;
+}
+
+section ol li, aside ul li {
+    margin-left: 18%;
+    margin-top: 0.5%;
+    color: #FFD700;
+}
+
+.contenedor__video1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+    height: 500px;
+}
+
+footer{
+    text-align: center;
+}
+
+.img_inicio{
+    width: 45%;
+    margin: 1% 2%;
+}
+
+#Inicio {
+    justify-content: center;
+    text-align: center;  
+}
+
+.gif_inicio{
+    padding-top: 1%;
+    width: 35%;
+}
+
+.gif1 {
+    padding-top: 1%;
+    width: 80%;
+}
+
+.img_1 {
+    text-align: center;    
+    margin-top: 1%;
+}
