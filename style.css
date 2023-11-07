@@ -8,31 +8,134 @@
     font-family: 'Roboto Slab', serif;
 }
 
+:root {
+    --tamaño-ico: 100px;
+}
+
+/* Mobile first */
+body{
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+}
+
+.ico_img1 {
+    display: none;
+}
+
 header ul{
     display: flex;
+    flex: 1;
+    list-style: none;
     flex-wrap: wrap;
-    margin-left: 5%;
-    margin-right: 5%;
     justify-content: center;
+    align-items: center;
 }
 
 .header__item {
-    
+    display: flex;
     background-color: #232226;
     color: #FFD700;
-    
+    text-align: center;  
+    justify-content: center; 
+    align-items: center;
+    border: #232226 solid 0.25vw;
+    background-color: #232226;
+    border-radius: 10px;
+    width: 100px;
+    margin: 1vh 2vw;
+    height: 50px;
 }
 
 header ul a {
     text-decoration: none;
-    width: 175px;
-    text-align: center;
-    list-style: none;
-    margin: 1% 5%;
-    border: #232226 solid 0.25vw;
-    background-color: #232226;
-    border-radius: 10px;
 }
+
+/* Tablets */
+@media (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    
+    header ul {
+        justify-content: space-around;
+    }
+
+    .header__item {
+        width: 175px;
+    }
+
+    .contenedor1 {
+        position: absolute;
+        left: 10%;
+        top: 20%;
+    }
+
+    .ico_img1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #c3c3c7;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border-radius: 20%;
+    }
+
+    .ico_img1:hover {
+        animation: salto 0.8s infinite;
+    }
+
+    .ico_img1::before {
+        content: '';
+        display: inline-block;
+        background: #f8f8fa;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border-radius: 20%;
+        left: -6px;
+        top: -2px;
+    }
+
+    .ico_img1::after {
+        content: '';
+        display: inline-block;
+        background-image: url("img/analytics_1848160.png");
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-size: 90px 90px;
+        background-repeat: no-repeat;
+        top: 2px;
+    }
+
+    @keyframes salto {
+        0%, 100% {top: 0;}
+        30% {top: -25px;}
+    }
+}
+
+/* Escritorios normales */
+@media (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1200px) {
+    body {
+        font-size: 17px;
+    }
+}
+/*
+
+
+
+
 
 .header__item:hover{
     color: rgb(149, 224, 36);
@@ -48,8 +151,8 @@ header ul a {
 
 .titulo {
     margin-top: 1%;
-    order: 0; /* Coloca el elemento .titulo en la parte superior */
-    flex: 0 0 100%; /* Evita que se estire horizontalmente y ocupe todo el ancho disponible */
+    order: 0; /* Coloca el elemento .titulo en la parte superior *//*
+    flex: 0 0 100%; /* Evita que se estire horizontalmente y ocupe todo el ancho disponible *//*
     padding: 1% 5%;
     text-align: center;
     box-shadow: #232226;
@@ -106,4 +209,4 @@ footer{
 .img_1 {
     text-align: center;    
     margin-top: 1%;
-}
+} */
