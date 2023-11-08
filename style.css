@@ -9,7 +9,7 @@
 }
 
 :root {
-    --tamaño-ico: 100px;
+    --tamaño-ico: 55px;
 }
 
 /* Mobile first */
@@ -68,9 +68,8 @@ header ul a {
     }
 
     .contenedor1 {
-        position: absolute;
-        left: 10%;
-        top: 20%;
+        padding: 2.5vh 2.5vw;
+        
     }
 
     .ico_img1 {
@@ -78,8 +77,8 @@ header ul a {
         justify-content: flex-start;
         align-items: center;
         background: #c3c3c7;
-        width: 100px;
-        height: 100px;
+        width: var(--tamaño-ico);
+        height: var(--tamaño-ico);
         position: relative;
         border-radius: 20%;
     }
@@ -92,29 +91,29 @@ header ul a {
         content: '';
         display: inline-block;
         background: #f8f8fa;
-        width: 100px;
-        height: 100px;
+        width: var(--tamaño-ico);
+        height: var(--tamaño-ico);
         position: absolute;
         border-radius: 20%;
-        left: -6px;
-        top: -2px;
+        left: calc(-0.06 * var(--tamaño-ico));
+        top: calc(-0.02 *  var(--tamaño-ico));
     }
 
     .ico_img1::after {
         content: '';
         display: inline-block;
         background-image: url("img/analytics_1848160.png");
-        width: 100px;
-        height: 100px;
+        width: var(--tamaño-ico);
+        height: var(--tamaño-ico);
         position: absolute;
-        background-size: 90px 90px;
+        background-size: calc(0.9 * var(--tamaño-ico)) calc(0.9 * var(--tamaño-ico));
         background-repeat: no-repeat;
-        top: 2px;
+        top: calc(0.02 * var(--tamaño-ico));
     }
 
     @keyframes salto {
         0%, 100% {top: 0;}
-        30% {top: -25px;}
+        30% {top: calc(-0.25 * var(--tamaño-ico));}
     }
 }
 
